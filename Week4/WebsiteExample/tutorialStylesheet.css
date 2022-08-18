@@ -1,0 +1,422 @@
+﻿* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+
+header {
+    float: right;
+    font-size: 4em;
+    text-align: center;
+    font-kerning: none;
+    letter-spacing: 3px;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    color: black;
+    display:inline-block;
+    /*background-color: #333;*/
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    z-index: 1;
+}
+
+    /* Style the topnav links */
+    .topnav a {
+        float: left;
+        /*display: block;*/
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+        border-bottom: solid;
+        z-index: 1;
+    }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;  
+          
+        }
+.backgroundpicture {
+    background-image: url('dog-2983021_1280.jpg');
+    float: right;
+    font-size: 4em;
+    text-align: center;
+    font-kerning: none;
+    letter-spacing: 3px;
+    background-attachment: fixed;
+}
+
+.quickfacts {
+    font-size: large;
+    text-decoration: double;
+}
+
+nav {
+    float: left;
+    width: 100%;
+    /*height: 80px;*/
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+  }
+
+    nav li {
+        text-decoration: none;
+        color: black;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        letter-spacing: -1px;
+        word-spacing: 2px;
+        color: #5C30FF;
+        font-weight: normal;
+        font-style: normal;
+        font-variant: normal;
+        text-transform: capitalize;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        text-decoration-style: none;
+        position: relative;
+        z-index: 1;
+     
+    }
+
+/*ul li::before {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    color: #0d8ba1;
+}*/
+
+nav li a {
+    color: black;
+    content: "\002022";
+    z-index: 1;
+    color: #0d8ba1;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+}
+a:before {
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+a {
+    color: #0d8ba1;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    text-decoration: none;
+}
+input:hover {
+    background: #f2f2f2;
+}
+
+input:active {
+    background: #144E75;
+}
+
+main {
+    margin-left: 0px;
+    margin-top:100px;
+    float: left;
+    width: 60%;
+    height: 900px;
+    /*display: block;*/
+    font-size:25px;
+}
+
+.asidebox {
+    background-color: palegoldenrod;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+section {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+    /*section.backgroundimg {
+        border: 2px solid black;
+        background-color: #ffffff;
+        height: 100%;
+        width: 70%;
+        float: right;
+    }*/
+
+    section .transbox {
+        background: url('dog-2983021_1280.jpg') no-repeat scroll;
+        background-size: cover;
+        height: 100%;
+        opacity: .3;
+        background-attachment: fixed;
+        z-index: -1;
+    }
+
+.makechangessection {
+    width:40%;
+    height:100px;
+    margin-left:280px;
+    margin-top:auto;
+    background-color:white;
+    border:dashed;
+    
+}
+
+article {
+    top: 0;
+    /*float: right;*/
+    width: 100%;
+}
+
+aside {
+    height: 10%;
+    width: 30%;
+    border: dashed;
+    float: right;
+    /*align-items:flex-end;
+    align-self:stretch;*/
+}
+/*aside:hover {
+    font-size: large;
+    background-color:azure;
+}*/
+#table {
+    background-color: antiquewhite;
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid #FFFFFF;
+    text-align: left;
+    border-collapse: collapse;
+
+    margin-left: 10px;
+  
+}
+.fixedaside {
+    position: absolute;
+    background-image: url('professions-2979650_640.jpg');
+    background-repeat: no-repeat;
+    /*opacity: .6;
+    width: 600px;
+    height: 100%;
+    right: 0;
+    top: 470px;*/
+    background-size: cover;
+    height: 100%;
+    opacity: .1;
+    background-attachment: fixed;
+    z-index: -1;
+}
+#formsmain {
+    margin-left: 0px;
+    float: left;
+    width: 100%;
+    height: 900px;
+    display: block;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.myButton {
+    color: rgb(48, 81, 255);
+    background-color:antiquewhite;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 19px;
+    border-radius: 0px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid bisque;
+    display: inline-block;
+    /*width: 280px;*/
+    height: 50px;
+}
+
+    .myButton:hover {
+        background: #808080;
+    }
+
+    .myButton:active {
+        background: #808080;
+    }
+
+table.paleBlueRows {
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid #FFFFFF;
+    width: 80%;
+    height: 50%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+input{
+    background-color:white;
+    font-size:14px;
+}
+
+    table.paleBlueRows td, table.paleBlueRows th {
+        border: 1px solid #FFFFFF;
+        padding: 3px 2px;
+    }
+
+    table.paleBlueRows tbody td {
+        font-size: 23px;
+    }
+
+    table.paleBlueRows tr:nth-child(even) {
+        background: #D0E4F5;
+    }
+
+    table.paleBlueRows thead {
+        background: #0B6FA4;
+        border-bottom: 5px solid #FFFFFF;
+    }
+
+        table.paleBlueRows thead th {
+            font-size: 37px;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-align: center;
+            border-left: 2px solid #FFFFFF;
+        }
+
+            table.paleBlueRows thead th:first-child {
+                border-left: none;
+            }
+
+    table.paleBlueRows tfoot {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333333;
+        background: #D0E4F5;
+        border-top: 3px solid #444444;
+    }
+
+        table.paleBlueRows tfoot td {
+            font-size: 14px;
+        }
+
+.formelements{
+    background-position:0% 50%;
+    background-repeat:no-repeat;
+    padding-left:15px;
+    font-size:large;
+    float: right;
+}
+
+.myformbutton {
+    color: black;
+    background-color: antiquewhite;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 19px;
+    border-radius: 0px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid bisque;
+    display: inline-block;
+    width: auto;
+    height:auto;
+}
+table{
+    font-size: 22px;
+    width:auto;
+    float:left;
+}
+
+.formelements {
+    width: 305px;
+    text-align: center;
+    height: 38px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+   
+
+ li.dropdown {
+        display: inline-block;
+        height:100px;
+
+    }
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color:grey;
+        }
+
+   
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    height:auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        z-index: 1;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+.dropdown:hover .dropdown-content {
+    display:inline-block;
+}
+h4{
+    padding-top:1em;
+    clear:both;
+}
+
+#demo {
+    width: 200px;
+    margin-left: 280px;
+    margin-top: auto;
+    background-color: white;
+    border: dashed;
+    display: block;
+}

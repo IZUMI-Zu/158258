@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="JsTutorial.js"></script>
+ 
+    <link href="FormStyle.css" rel="stylesheet" />
+    <link href="tutorialStylesheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="backgroundpicture">Form Elements</header>
+    <nav class="topnav">
+        <ul>
+            <li><a href="home.html">Home</a> </li>
+            <li><a href="QuickFacts.html">Quick Facts</a></li>
+            <li><a href="HTML5Semantics.html">Semantics</a></li>
+            <li><a href="MakeChanges.html">JavaScript Handling</a></li>
+            <li><a href="HTML5 Video and Audio">Video and Audio</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Forms</a>
+                <div class="dropdown-content">
+                    <a href="FormElements.html">Forms Elements</a>
+                    <a href="HtmlPage.html">Registeration Form</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+   
+      
+    <main id="formsmain">
+     
+        <p>
+            <h4>Taking input from the user and performing various arithmatic functions on those numbers</h4>
+        </p>
+        <table>
+            <tr>
+                <td>Enter First Value :</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" id="val1" /></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td> Enter a number for addition and minimum value for random number</td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Second Value:
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                    <input type="text" id="val2" />
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td> Enter a number for addition and maximum value for random number</td>
+            </tr>
+            <tr>
+                <td> Enter operation to perform:</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" id="operation" onchange="result()" /></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td> Write + for addition and random for generating random numbers</td>
+            </tr>
+        </table>
+        <aside>
+             <p id='answer'>
+                <!--<input type="button" class="myformbutton" onclick='result()' value="Click" />-->
+                Answer is:
+            </p>
+            </aside>
+        <h4>Getting value in a radio button and then displaying the checked one using, getElementsByTagName()</h4>
+        <table id="table" onchange="elementsByTag()">
+            <tr>
+                <td>Your age:</td>
+                <td>
+                    <label>
+                        <input type="radio" name="age" value="young" checked> less than 18 <br />
+                    </label>
+                    <label>
+                        <input type="radio" name="age" value="mature"> from 18 to 50 <br />
+                    </label>
+                    <label>
+                        <input type="radio" name="age" value="senior"> more than 60 <br />
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <section class="makechangessection">
+            <p id='Selectedvalue'> Click on radio buttons </p>
+        </section>
+            <h4>Random password list maker</h4>
+         <p>Click the button below to create a new password.</p>
+        <input type="button" onclick="MakePassword();" value="New Password"/>
+        <input type="button" onclick="_ClearList('demo');" value="Clear"/>
+        <ol id="demo"></ol>
+    </main>    
+
+    
+</body>
+</html>

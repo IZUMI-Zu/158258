@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="JsTutorial.js"></script>
+    <link rel="stylesheet" href="tutorialStylesheet.css" />
+</head>
+<body>
+    <header class="backgroundpicture">JavaScript</header>
+    <nav class="topnav">
+        <ul>
+            <li><a href="home.html">Home</a> </li>
+            <li><a href="QuickFacts.html">Quick Facts</a></li>
+            <li><a href="HTML5Semantics.html">Semantics</a></li>
+            <li><a href="MakeChanges.html">JavaScript Handling</a></li>
+            <li><a href="HTML5 Video and Audio">Video and Audio</a></li>
+            <li class="dropdown">
+                <!--<a href="javascript:void(0)" class="dropbtn">Forms</a>-->
+                <a class="dropbtn">Forms</a>
+                <div class="dropdown-content">
+                    <a href="FormElements.html">Forms Elements</a>
+                    <a href="HtmlPage.html">Registeration Form</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main class="formsmain">
+        
+            <input class="myButton" type=submit value='Body Font is Arial  ' onclick="setFont('Arial'  )">
+            <input class="myButton" type=submit value='Body Font is Georgia' onclick="setFont('Georgia')">
+            <input class="myButton" type=submit value='Body Font is Times  ' onclick="setFont('Times'  )">
+            <!--<input class="myButton" type=submit value='Revert Body Font    ' onClick="revertFont()">-->
+            <input class="myButton" type=submit value='Show Changes        ' onClick="showChanges()">
+            <p></p>
+      
+        <section class="makechangessection">
+            <h2>Change Body Font</h2>
+            <p><h3>Changes</h3></p>
+            <p id='changeList'> None yet </p>
+        </section>
+</main>
+</body>
+</html>

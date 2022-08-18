@@ -1,0 +1,61 @@
+﻿#formsmain {
+    margin-left: 100px;
+    float: left;
+    width: 80%;
+    height: 900px;
+    display: block;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 20px;
+}
+form {
+    border: dotted;
+    border-bottom:dotted;
+    margin-left:100px;
+    width:70%;
+    height:50%;
+    background-color: aliceblue;
+    
+}
+h1 {
+    margin-left: 70px;
+    
+}
+#rng {
+    width: 700px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+
+form li {
+    list-style: none;
+    margin-bottom: 5px;
+    width: 934px;
+}
+.auto-style1 {
+    text-align: left;
+}
+
+/*form ul li label {
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+form ul li input, select, span {
+    float: left;
+    margin-bottom: 10px;
+}
+*/ 
+[type="submit"] {
+    clear: left;
+    margin: 20px 0 0 230px;
+    font-size: 18px
+}
+

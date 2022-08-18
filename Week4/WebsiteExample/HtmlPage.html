@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="tutorialStylesheet.css" rel="stylesheet" />
+    <link href="FormStyle.css" rel="stylesheet" />
+    <script src="JsTutorial.js"></script>
+</head>
+<body onload="document.registration.username.focus();">
+    <header>
+        Sign up
+    </header>        
+            
+            <nav class="topnav">
+                <ul>
+                    <li><a href="home.html">Home</a> </li>
+                    <li><a href="QuickFacts.html">Quick Facts</a></li>
+                    <li><a href="HTML5Semantics.html">Semantics</a></li>
+                    <li><a href="MakeChanges.html">JavaScript Handling</a></li>
+                    <li><a href="HTML5 Video and Audio">Video and Audio</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Forms</a>
+                        <div class="dropdown-content">
+                            <a href="FormElements.html">Forms Elements</a>
+                            <a href="HtmlPage.html">Registeration Form</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+    <h1>Registration Form</h1>
+    <h2>Use tab keys to move from one input field to the next.</h2>
+
+    <form name='registration'>
+        <main id="formsmain">
+            <ul>
+                <li class="auto-style1">
+                    <label for="register-name">My name is: </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input class="formelements" type="text" id="register-name" name="username" required="required" />
+                    <p></p>
+                </li>
+                <li class="auto-style1">
+                    <label for="address">My email address is: </label>
+                    &nbsp;
+                    <input class="formelements" type="text" id="address" name="emailadd" required="required" placeholder="e.g. abc@massey.ac.nz" /><p></p>
+                </li>
+                <li class="auto-style1">
+                    <label for="password">Enter Password: </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input class="formelements" type="password" id="password" name="pwd" required="required" />At least 6 characters, no spaces<p></p>
+                    &nbsp;
+                </li>
+
+                <li><label for="country">Country:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="country" style="text-align: left; height: 20px; width: 287px; margin-left:650px; margin-top: 0px;">
+                        <option selected="" value="Default">(Please select a country)</option>
+                        <option value="AF">Australia</option>
+                        <option value="AL">Canada</option>
+                        <option value="DZ">India</option>
+                        <option value="AS">Russia</option>
+                        <option value="AD">USA</option>
+                    </select> 
+                </li>
+               
+                <li class="auto-style1">
+                    <label for="rating">On a Scale from 1 to 10 my knowledge of HTML5 is:  </label>
+                    <input class="formelements" type="range" min="1" max="10" id="rng" name="rating" step="1" /><p></p>
+                    &nbsp;<input class="formelements" type="submit" id="register-submit" value="Submit" onclick="formValidation();"/>
+                </li>
+            </ul>
+        </main>
+    </form>
+        </body>
+</html>
