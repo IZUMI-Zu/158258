@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./button.js"></script>
+
+    <style type="text/css">
+        div,
+        br {
+            margin: 3%;
+        }
+    </style>
+    <title>Tut 5</title>
+</head>
+<script>
+    document.write("<div><h1>Tut 05</h1></div>")
+    const popup = function (x) {
+        alert(x)
+    }
+
+    let count = 0;
+    const popup_if = function (x) {
+        if (x.includes('fred')) {
+            popup(count + "\t" + x)
+            count += 1
+        }
+    }
+
+    const writeText = function (box, num) {
+        for (let index = 1; index < num + 1; index++) {
+            const textnode = document.createTextNode(index)
+            box.appendChild(textnode)
+        }
+    }
+
+    const parse = function (x) {
+        let num = parseInt(x)
+        if (num <= 10 && num >= 1) {
+            writeText(document.getElementById('output'), num)
+        } else if (num == NaN) {
+            alert("Not a valid number: " + num)
+        } else {
+            alert("out of range please enter a number between 1-10")
+        }
+    }
+
+    let input = new Array()
+
+    const add = function (value) {
+        input.push(value)
+    }
+
+    const show = function (htmlId) {
+        document.getElementById(htmlId).innerHTML = ""
+        for (let index = 0; index < input.length; index++) {
+            const node = document.createElement("h3");
+            const textNode = document.createTextNode(input[index])
+            node.appendChild(textNode)
+            document.getElementById(htmlId).appendChild(node)
+        }
+    }
+
+    const clear_ = function (htmlId) {
+        document.getElementById(htmlId).innerHTML = ""
+    }
+
+    const deleteLast = function () {
+        input.splice(input.length - 1, 1)
+    }
+</script>
+
+<body>
+    <div>
+        <label for="num">Number :</label>
+        <input type="text" id="num" name="num" value="123456">
+        <button onclick="popup(document.getElementById('num').value)">First</button>
+        <button onclick="popup_js(document.getElementById('num').value)">Second</button>
+    </div>
+
+    <div>
+        <label for="input_val">Input Something: </label>
+        <input type="text" id="input_val" name="input_val">
+        <input type="submit" value="Submit" onclick="popup(document.getElementById('input_val').value)">
+    </div>
+
+    <!--todo : 2-->
+    <div>
+        <label for="input_val_if">Input Something: </label>
+        <input type="text" id="input_val_if" name="input_val_if">
+        <input type="submit" value="Submit" onclick="popup_if(document.getElementById('input_val_if').value)">
+    </div>
+
+    <div>
+        <label for="input_num">Input Something(from 1 to 10): </label>
+        <input type="text" id="input_num" name="input_num">
+        <input type="submit" value="Submit" onclick="parse(document.getElementById('input_num').value)">
+        <p id="output"></p>
+    </div>
+
+    <div>
+        <label for="input_text_array">Input Something: </label>
+        <input type="text" id="input_text_array" name="input_text_array">
+        <br></br>
+        <button onclick="add(document.getElementById('input_text_array').value)">Add</button>
+        <button onclick="show('res')">Show</button>
+        <button onclick="clear_('res')">Clear</button>
+        <button onclick="deleteLast()">Delete-Last</button>
+        <p id="res"></p>
+    </div>
+
+</body>
+
+</html>

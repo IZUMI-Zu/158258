@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+/*
+    New Perspectives on HTML and CSS
+    Tutorial 4
+    Review Assignment
+
+    Cycle Pathology Style Sheet
+    Author: BINSHUO ZU
+    Date:  2022/9/17
+    ID 21012854
+    Filename:         race.css
+    Supporting Files: 
+
+*/
+
+/* display the header,article, aside, figure,
+figcaption, hgroup, sections and
+nav elements as blocks. */
+header,
+article,
+aside,
+figure,
+figcaption,
+hgroup,
+sections,
+nav {
+    display: block;
+}
+
+/* set the default style for every element */
+* {
+    margin: 0;
+    padding: 0;
+    /* setting font size */
+    font-size: 100%;
+    /* set font family */
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Remove the underlining 
+from every hypertext link within a nav element. */
+nav a {
+    text-decoration: none;
+}
+
+/* style rule for the page body */
+body {
+    /* using relative positioning */
+    position: relative;
+    margin: 0;
+    /* sets the page width to 98% */
+    width: 98%;
+    /* width of the browser window in a range 
+    from 1000 pixels up to 1400 pixels. */
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* style rule for the header element */
+body>header {
+    /* absolute positioning */
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* sets the width to 20% */
+    width: 20%;
+    background-color: black;
+    /* adds a 500-pixel padding space to bottom */
+    padding-bottom: 500px;
+}
+
+/* set the width to 100% 
+of the width of the header. */
+body>header>img {
+    width: 100%;
+}
+
+.horizontal {
+    /* left margin of 20% */
+    margin-left: 20%;
+    /* Set the width of horizontal to 80% */
+    width: 80%;
+}
+
+.horizontal ul {
+    background-color: rgb(49, 38, 31);
+    display: flex;
+}
+
+.horizontal li {
+    /* display each list item as a
+     block floated on the left; */
+    display: block;
+    float: left;
+    /* set the upper and lower padding space to 5 pixels */
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /* set the width of each list item to 20% */
+    width: 20%;
+    /* horizontally center the list item text; */
+    text-align: center;
+    /* transform the text to uppercase letters */
+    text-transform: uppercase;
+}
+
+.horizontal li a {
+    /* setting the font size to 85% */
+    font-size: 85%;
+    color: white;
+}
+
+/* If the user hovers the mouse 
+pointer over the link, change the color  */
+.horizontal li a:hover {
+    color: rgb(215, 181, 151);
+}
+
+body>header li {
+    /* set the font size to 85% */
+    font-size: 85%;
+    /* transform the text to uppercase letters */
+    text-transform: uppercase;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+body>header a {
+    /* indent the text 10 pixels */
+    text-indent: 10px;
+    /* display property to block */
+    display: block;
+    /* set the font color to white */
+    color: white;
+}
+
+/* when the user hovers the mouse pointer 
+over the hypertext link */
+body>header a:hover {
+    /* change the background color */
+    background-color: rgb(51, 51, 51);
+    /* add border */
+    border: solid 2px rgb(215, 181, 151);
+
+}
+
+.newgroup {
+    /* top padding space of 25 pixels */
+    padding-top: 25px;
+}
+
+/* Add the styles to the main section */
+#main {
+    /* todo */
+    /* float the main section on the left */
+    float: left;
+    /* set the width of the main section */
+    width: 49%;
+    /* set the size of the left margin */
+    margin-left: 21%;
+    /* set the size of the top margin */
+    margin-top: 20px;
+}
+
+/* h1 headings that are direct children of the main section */
+#main h1 {
+    /* set the text color */
+    color: rgb(189, 131, 82);
+    /* set the font size and weight*/
+    font-size: 180%;
+    font-weight: normal;
+    /* set the letter spacing  */
+    letter-spacing: 5px;
+}
+
+#main p {
+    /* margins of paragraphs  */
+    margin-top: 15px;
+}
+
+#main ul {
+    /* display a disc marker */
+    list-style: disc;
+    /* set the margin */
+    margin: 25px;
+}
+
+#main li {
+    /* bottom margin of each list item*/
+    margin-bottom: 10px;
+}
+
+#main aside {
+    /* rounded border with a radius of 30 pixels */
+    border-radius: 30px;
+    /* float the aside element on the right */
+    float: right;
+    /* set the width to 50% */
+    width: 50%;
+    height: auto;
+    /* add a 3-pixel solid border  */
+    border: 3px solid rgb(149, 91, 42);
+    /* set the text color */
+    color: rgb(149, 91, 42);
+    padding: 10px;
+    /* margin of 10 pixel */
+    margin: 10px;
+}
+
+#main>aside p {
+    /* set the font size to 90% */
+    font-size: 90%;
+    /* margin to 20 pixels */
+    margin: 20px;
+}
+
+article {
+    /* float the element on the left */
+    float: left;
+    /* width of 29% */
+    width: 29%;
+    /* left margin of 1% */
+    margin-left: 1%;
+    /* set the background color */
+    background-color: rgb(215, 181, 151);
+}
+
+article hgroup {
+    /* display a background color */
+    background-color: rgb(189, 131, 82);
+    /* background image */
+    background-image: url("./alisha.png");
+    /* with no tiling */
+    background-repeat: no-repeat;
+    /* displayed in the bottom-right corner  */
+    background-position: right bottom;
+    /* set the text color */
+    color: rgb(215, 181, 151);
+    /* set the bottom margin */
+    margin-bottom: 10px;
+    /* set the height */
+    height: 60px;
+    /* indent the text */
+    text-indent: 20px;
+}
+
+/* Set the size of h1 heading */
+article>hgroup h1 {
+    font-size: 150%;
+    font-weight: normal;
+}
+
+/* Set the size of h2 heading */
+article>hgroup h2 {
+    font-size: 110%;
+    font-weight: normal;
+}
+
+article p {
+    /* set the font size to 90% */
+    font-size: 90%;
+    /* set the margin to 15 pixel */
+    margin: 15px;
+}
+
+/* create a style rule */
+figure {
+    /* todo */
+    /* set the width of the figure */
+    width: 79%;
+    /* float the figure box on the left */
+    float: left;
+    /* add a 21 % left margin */
+    margin-left: 21%;
+    /* set the background color */
+    background-color: rgb(149, 91, 42);
+}
+
+figure div {
+    /* display scroll bars */
+    overflow: scroll;
+    overflow-y: hidden;
+    display: flex;
+}
+
+/* inline images within the figure box */
+figure div img {
+    /* set the margin to 10 pixel */
+    margin: 10px;
+    /* add rounded corners with a radius of 10 pixel */
+    border-radius: 10px;
+}
+figure figcaption {
+    /* set the back-ground to white */
+    background-color: white;
+    /* set the font size to 80% */
+    size: 80%;
+    /* displayed in italic and centered */
+    text-align: center;
+    font-style: italic;
+    /* set the top margin to 5 pixel */
+    margin-top: 5px;
+}

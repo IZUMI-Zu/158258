@@ -1,0 +1,202 @@
+﻿@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet   
+   Author: BINSHUOZU
+   ID: 21012854
+   Date: 2022/9/11
+   Filename: lake_styles.css
+
+*/
+
+/* adding custom front cac_champagne */
+@font-face {
+   font-family: cac_champagne;
+   src: url(./cac_champagne.woff);
+}
+
+/* adding custom front cac_champagne */
+@font-face {
+   font-family: DobkinPlain;
+   src: url(./DobkinPlain.woff);
+}
+
+
+/* setting the web's background color */
+html {
+   background-color: burlywood;
+}
+
+/* setting the web's body element color */
+body {
+   background-color: black;
+}
+
+/* setting the top nav bar */
+body>header>nav {
+   background-color: #784a78;
+   /*adding color*/
+   padding-bottom: 5px;
+   padding-top: 5px;
+}
+
+/* setting the top nav bar's */
+body>header>nav a {
+   text-decoration: none;
+   /* remove the links decoration */
+   /* set the front  */
+   font: 1em sans-serif;
+   font-size: 20px;
+   color: #bb90bb;
+}
+
+/* stanardlize the left and right col's margin */
+body>section#leftcol,
+#rightcol {
+   margin: 0;
+   border: 0;
+}
+
+/*  seting the color and front for left col */
+body>section#leftcol {
+   color: white;
+   background-color: black;
+   font-size: large;
+}
+
+/* add ing padding for sub element in leftcol */
+body>section#leftcol h1,
+p,
+aside {
+   padding-left: 15px;
+   padding-right: 20px;
+}
+
+/* setting style for the first h1 element in left col */
+body>section#leftcol>h1:first-of-type {
+   /* setting font */
+   font: 1em cac_champagne;
+   font-weight: bold;
+   font-size: 70px;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+/* setting style for the first aside element in left col */
+body>section#leftcol>aside:first-of-type {
+   background-color: #e5a090;
+   font-size: 15px;
+   padding-bottom: 10px;
+}
+
+/* setting style for the first aside element in left col */
+body>section#leftcol>aside:first-of-type>ul {
+   /* adding margin */
+   margin: 0;
+   margin-left: 10px;
+   /* adding padding */
+   padding: 0;
+   padding-left: 15px;
+}
+
+/* setting style for the first aside element in left col'aside */
+body>section#leftcol>aside:first-of-type>ul a {
+   color: #b970bf
+}
+
+/* setting style for the last aside element in left col */
+body>section#leftcol>aside:last-of-type {
+   background-color: #d1bb72;
+   font-size: 15px;
+   /* adding padding */
+   padding-bottom: 10px;
+   padding-right: 3px;
+   padding-left: 3px;
+}
+
+/* setting style for the last h2 element in aside */
+body>section#leftcol>aside:last-of-type h2 {
+   font-size: medium;
+   margin-left: 8px;
+}
+
+/* setting style for the last paraph element in aside */
+body>section#leftcol>aside:last-of-type p {
+   padding-top: 10px;
+}
+
+/* change text align in fist and last elem in left aside */
+body>section#leftcol>aside:first-of-type h1,
+body>section#leftcol>aside:last-of-type h1 {
+   text-align: center;
+}
+
+/* setting right col in body section */
+body>section#rightcol {
+   color: white;
+   background-color: #582d5a;
+   margin: 0;
+   width: 30%;
+   padding-left: 4%;
+   /* change display mode to set to display as teble cell */
+   display: table-cell; 
+   padding-bottom: 350px
+}
+
+body>section#rightcol a {
+   color: #b39ab4;
+   /* remove the decoration of link */
+   text-decoration: none;
+}
+
+/* setting right col's h2 elem */
+body>section#rightcol h2 {
+   font: 3em cac_champagne;
+   margin: 0;
+   padding-top: 8%;
+}
+
+/* setting right col's ul elem */
+body>section#rightcol ul {
+   /* remove the list style */
+   list-style: none;
+   padding: 0;
+   padding-left: 20px;
+}
+
+/* adding style for the rightcol to add the blockquote */
+body>section#rightcol blockquote {
+   /* change the position */
+   position: relative;
+   margin: 0;
+   padding-right: 15%;
+   padding-top: 20%;
+   color: #b970bf;
+   font-size: 20px;
+   line-height: 27px;
+}
+
+/* adding quoto */
+blockquote:before {
+   content: "\201C";
+   font-size: 1.5em;
+   line-height: 0.1em;
+}
+
+/* adding quoto */
+blockquote:after {
+   content: "\201D";
+   font-size: 1.5em;
+   line-height: 0.1em;
+}
+
+/* adding footer style */
+footer {
+   background-color: #4d464e;
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
