@@ -21,9 +21,10 @@
         alert(x)
     }
 
-    let count = 0;
+    let count = 1;
     const popup_if = function (x) {
         if (x.includes('fred')) {
+            x = x.includes('fred') ? x.replace(/fred/g, 'FRED') : x
             popup(count + "\t" + x)
             count += 1
         }
@@ -31,8 +32,8 @@
 
     const writeText = function (box, num) {
         for (let index = 1; index < num + 1; index++) {
-            const textnode = document.createTextNode(index)
-            box.appendChild(textnode)
+            const textNode = document.createTextNode(index + "  ")
+            box.appendChild(textNode)
         }
     }
 
@@ -40,8 +41,8 @@
         let num = parseInt(x)
         if (num <= 10 && num >= 1) {
             writeText(document.getElementById('output'), num)
-        } else if (num == NaN) {
-            alert("Not a valid number: " + num)
+        } else if (isNaN(num)) {
+            alert("Not a valid number: " + x)
         } else {
             alert("out of range please enter a number between 1-10")
         }
