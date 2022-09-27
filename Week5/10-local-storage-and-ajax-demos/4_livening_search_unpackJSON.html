@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+<script>
+// Start a background request
+function AJAX_queryiTunesStore_v4(searchTerm, callbackFunction) {
+   xhr = new XMLHttpRequest();  // IMPORTANT - 'xhr' IS GLOBAL
+   var searchReq = "https://itunes.apple.com/search?term=" + searchTerm
+   xhr.open('get', searchReq);
+   xhr.onreadystatechange = callbackFunction
+   xhr.send()   // Run the process
+}
+
+function handleiTunesResponseCallback_v4() {  // 
+   if (xhr.readyState === 4 ) {  // DONE
+       if (xhr.status === 200) { // OK
+          var response  = JSON.parse(xhr.responseText);
+          var numResults = response.resultCount
+          document.getElementById('resp4').innerHTML = new Date() + ', #Results='+numResults
+          var resultList = response.results
+          var s = ''
+          for (i=0; i<numResults; i++){
+             var item = resultList[i]
+             s = s + item.artistName + ' -- ' + item.trackName + '<br>'
+          }              
+          document.getElementById('ajax4').innerHTML = s
+       }
+       else {
+          alert('Error: ' + xhr.status); // An error occurred during the request.
+       }
+   }
+}
+
+function searchITunesStore_v4(){
+  searchTerm = document.getElementById('searchbox').value
+  AJAX_queryiTunesStore_v4(searchTerm, handleiTunesResponseCallback_v4)
+}
+</script>
+<input type='text' id='searchbox' onInput="searchITunesStore_v4()"
+       placeholder='Search for what' autofocus> 
+<p id='resp4'>Last update ...</p>
+<p>JSON Result</p>
+<p id=ajax4> Show Ajax Response</p>
+</body>
+  
+</html>

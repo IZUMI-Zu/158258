@@ -1,0 +1,87 @@
+<html>
+<head></head>
+
+<body>
+
+
+ <div id="hi"> <span id="elem" about="Elephant">Hello World! </span></div>
+  <script>
+
+    alert( hi.innerHTML );//	innerHTML is a property of a DOM element that represents the HTML inside the element, i.e. between the opening and closing tags. 	 
+    alert( hi.outerHTML ); //outerHTML is similar to innerHTML, it is an element property that includes the opening an closing tags as well as the content. 
+		 
+    for (let attr of elem.attributes) { 
+      alert( attr.name + " = " + attr.value );
+    }
+  </script>
+
+<style>
+.alert {
+  padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+.alert-success {
+ font-size: 200%;
+}
+</style>
+
+<ol id="list">
+  <li id ="i">0</li>
+  <li>1</li>
+  <li id="ll">2</li>
+</ol>
+
+<script>
+  let div = document.createElement('div');
+  div.className = "alert alert-success";
+  alert(div.outerHTML );
+  div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+  document.body.appendChild(div);
+</script>
+
+
+
+
+<script>
+  let newLi = document.createElement('li');
+  newLi.innerHTML = 'Hello, world!';
+
+  list.appendChild(newLi);
+</script>
+
+
+<div show-info="name"></div>
+
+<div show-info="age"></div>
+
+<script>
+  // the code finds an element with the mark and shows what's requested
+  let user = {
+    name: "Tong",
+    age: 20
+  };
+  for(let div of document.querySelectorAll('[show-info]')) {
+    // insert the corresponding info into the field
+    let field = div.getAttribute('show-info');
+    div.innerHTML = user[field]; // yourName, then age
+  }
+</script>
+
+
+<!--  <div id="elem" about="Elephant" Test="1"></div>
+  <script>
+    alert( elem.getAttribute('About') ); // (1) 'Elephant', reading
+    elem.setAttribute('Test', 123); 	// (2), writing
+    alert( elem.getAttribute('Test') ); 
+    alert( elem.outerHTML );		 // (3), see it's there
+    for (let attr of elem.attributes) { 	// (4) list all
+      alert( attr.name + " = " + attr.value );
+    }
+  </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+<script>
+// Start a background request
+function AJAX_queryiTunesStore_v3(searchTerm, callbackFunction) {
+   xhr = new XMLHttpRequest();  // IMPORTANT - 'xhr' IS GLOBAL
+   var searchReq = "https://itunes.apple.com/search?term=" + searchTerm
+   xhr.open('get', searchReq);
+   xhr.onreadystatechange = callbackFunction
+   xhr.send()   // Run the process
+}
+
+// 
+function iTunesResponseCallback_v3() {  // 
+   if (xhr.readyState === 4 ) {  // DONE
+       if (xhr.status === 200) { // OK
+          document.getElementById('resp3').innerHTML = new Date()
+          document.getElementById('ajax3').innerHTML = xhr.responseText;
+       } else {
+          alert('Error: ' + xhr.status); // An error occurred during the request.
+       }
+   }
+}
+
+function searchITunesStore_v3(){
+  searchTerm = document.getElementById('searchbox').value
+  AJAX_queryiTunesStore_v3(searchTerm, iTunesResponseCallback_v3)
+}
+</script>
+<h2>Searching iTunes Store using onChange() event handler</h2>
+  <input type='text' id='searchbox'
+           onchange="searchITunesStore_v3()"
+           placeholder='Search for what'> 
+  <p id='resp3'>Last update ...</p>
+  <p>JSON Result</p>
+  <p id=ajax3> Show Ajax Response here</p>
+</body>
+</html>

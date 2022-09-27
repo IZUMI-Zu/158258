@@ -1,0 +1,38 @@
+ancient_wonders {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+wonder {
+    display: block;
+    color: rgb(104, 85, 85);
+    margin: 20px;
+}
+
+name {
+    font-size: 16pt;
+    color: rgb(117, 117, 128);
+    font-weight: bold;
+}
+
+location {
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(104, 85, 85);
+    font-family: Times New Roman, Times, Serif;
+    margin-left: 20px;
+}
+
+height,
+source {
+    display: block;
+    font-family: Times New Roman, Times, Serif;
+    margin-left: 20px;
+}
+
+productItems {
+    display: block;
+    color: rgb(117, 117, 128);
+    margin-left: 35px;
+}
