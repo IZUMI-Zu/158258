@@ -66,10 +66,12 @@
 
     const clear_ = function (htmlId) {
         document.getElementById(htmlId).innerHTML = ""
+        input.splice(0,input.length)
     }
 
     const deleteLast = function () {
         input.splice(input.length - 1, 1)
+        input.clear;
     }
 </script>
 
