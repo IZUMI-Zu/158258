@@ -1,0 +1,196 @@
+#head_img {
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../public/form/form_bg.avif") no-repeat center center;
+    background-size: cover;
+}
+
+#head_img h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#para {
+    font-size: medium;
+    margin-top: 3%;
+}
+
+.btn_sub_back .button {
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 4px;
+    background-color: rgba(32, 178, 171, 0.041);
+    border: none;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+}
+
+.btn_sub_back .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn_sub_back #button_submit {
+    float: right;
+    margin-right: 18%;
+}
+
+.btn_sub_back #button_back {
+    margin-left: 18%;
+}
+
+.btn_sub_back #button_submit span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn_sub_back #button_submit:hover span {
+    padding-right: 25px;
+}
+
+.btn_sub_back #button_submit:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.btn_sub_back #button_back span:after {
+    content: '«';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.btn_sub_back #button_back:hover span {
+    padding-left: 25px;
+}
+
+.btn_sub_back #button_back:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+#form_body {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.formbold-mb-5 {
+    margin-bottom: 20px;
+}
+
+.formbold-pt-3 {
+    padding-top: 12px;
+}
+
+.formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+.formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+}
+
+.formbold-form-label {
+    display: block;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+}
+
+.formbold-form-label-2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+}
+
+.formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #6a64f1;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.w-full {
+    width: 100%;
+}
+
+@media (min-width: 540px) {
+    .sm\:w-half {
+        width: 50%;
+    }
+}

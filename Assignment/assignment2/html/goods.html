@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Goods</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Outdoor, sports, store, all clothes, items, shirt, shoes, jacket">
+    <link rel="Shortcut Icon" type="image/x-icon" href="../public/vite.svg">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="../js/leaflet.ChineseTmsProviders.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/goods.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="./goods.html">All</a>
+        <a href="./shipping.html">Shipping</a>
+        <a href="./customs_fees.html">Customs Fees</a>
+        <a href="./privacy_policy.html">Privacy Policy</a>
+        <a href="./collected_data.html">Wishing List</a>
+    </div>
+
+    <div id="content">
+        <div id="title">
+            <p>Our Goods</p>
+            <h3>All of Our Gears</h3>
+            <p>Discounted pricing all our good gears suit for all people</p>
+        </div>
+
+        <div id="items">
+            <div class="row" id="row-1">
+                <div class="col" id="row-1-col-1">
+                    <img class="child" src="../public/goods/goods_row_1_col_1.avif" alt="clothes_1">
+                    <p>Granville 16 Zip Backpack</p>
+                    <p class="mid">Versatile, highly weather resistant, <br> urban day pack.</p>
+                    <p>CNY 1800.00</p>
+                </div>
+                <div class="col" id="row-1-col-2">
+                    <img class="child" src="../public/goods/goods_row_1_col_2.avif" alt="clothes_2">
+                    <p>Granville 10 Zip Backpack</p>
+                    <p class="mid">Versatile, weather resistant, <br> daily pack.</p>
+                    <p>CNY 1000.00</p>
+                </div>
+                <div class="col" id="row-1-col-3">
+                    <img class="child" src="../public/goods/goods_row_1_col_3.avif" alt="clothes_3">
+                    <p>Alpha FL 40 Backpack Men's</p>
+                    <p class="mid">Fast and light (FL) 40L <br> alpine climbing pack.</p>
+                    <p>CNY 2000.00</p>
+                </div>
+                <div class="col" id="row-1-col-4">
+                    <img class="child" src="../public/goods/goods_row_1_col_4.avif" alt="clothes_4">
+                    <p>Cormac Crew SS Men's</p>
+                    <p class="mid">Performance tee for high <br> output in hot weather</p>
+                    <p>CNY 500.00</p>
+                </div>
+            </div>
+            <div class="row" id="row-2">
+                <div class="col" id="row-2-col-1">
+                    <img class="child" src="../public/goods/goods_row_2_col_1.avif" alt="clothes_1">
+                    <p>IS Hoods Men's</p>
+                    <p class="mid">Lightweight warmth and <br> weather resistance</p>
+                    <p>CNY 2100.00</p>
+                </div>
+                <div class="col" id="row-2-col-2">
+                    <img class="child" src="../public/goods/goods_row_2_col_2.avif" alt="clothes_2">
+                    <p>Jacket Men's</p>
+                    <p class="mid">Lightweight hooded <br> GORE-TEX jacket</p>
+                    <p>CNY 100.00</p>
+                </div>
+                <div class="col" id="row-2-col-3">
+                    <img class="child" src="../public/goods/goods_row_2_col_3.avif" alt="clothes_3">
+                    <p>Crew SS Men's</p>
+                    <p class="mid">Performance tee for high <br> output in cold weather</p>
+                    <p>CNY 500.00</p>
+                </div>
+                <div class="col" id="row-2-col-4">
+                    <img class="child" src="../public/goods/goods_row_2_col_4.avif" alt="clothes_4">
+                    <p>LD 3 Shoe Woman's</p>
+                    <p class="mid">Long distance (LD) <br> trail running shoe</p>
+                    <p>CNY 600.00</p>
+                </div>
+            </div>
+            <div class="row" id="row-3">
+                <div class="col" id="row-3-col-1">
+                    <img class="child" src="../public/goods/goods_row_3_col_1.avif" alt="clothes_1">
+                    <p>Jacket Men's</p>
+                    <p class="mid">Light, breathable, packable <br> wind-shell</p>
+                    <p>CNY 599.00</p>
+                </div>
+                <div class="col" id="row-3-col-2">
+                    <img class="child" src="../public/goods/goods_row_3_col_2.avif" alt="clothes_2">
+                    <p>Bird Curved Brim Trucker Hats</p>
+                    <p class="mid">Curved-brim performance trucker</p>
+                    <p>CNY 200.00</p>
+                </div>
+                <div class="col" id="row-3-col-3">
+                    <img class="child" src="../public/goods/goods_row_3_col_3.avif" alt="clothes_3">
+                    <p>Solano Jacket Men's</p>
+                    <p class="mid">City styled GORE-TEX jacket</p>
+                    <p>CNY 1300.00</p>
+                </div>
+                <div class="col" id="row-3-col-4">
+                    <img class="child" src="../public/goods/goods_row_3_col_4.avif" alt="clothes_4">
+                    <p>Frame SS Shirt Men's</p>
+                    <p class="mid">Soft merino crew neck t-shirt</p>
+                    <p>CNY 200.00</p>
+                </div>
+            </div>
+            <div class="row" id="row-4">
+                <div class="col" id="row-4-col-1">
+                    <img class="child" src="../public/goods/goods_row_4_col_1.avif" alt="clothes_1">
+                    <p>Atom Hoody Men's</p>
+                    <p class="mid">Lightweight (LT), versatile synthetically <br> insulated hoody.</p>
+                    <p>CNY 1800.00</p>
+                </div>
+                <div class="col" id="row-4-col-2">
+                    <img class="child" src="../public/goods/goods_row_4_col_2.avif" alt="clothes_2">
+                    <p>IS Men's</p>
+                    <p class="mid">Lightweight warmth and weather <br> resistance</p>
+                    <p>CNY 400.00</p>
+                </div>
+                <div class="col" id="row-4-col-3">
+                    <img class="child" src="../public/goods/goods_row_4_col_3.avif" alt="clothes_3">
+                    <p>Align MX Men's</p>
+                    <p class="mid">Articulated and slim fitting</p>
+                    <p>CNY 800.00</p>
+                </div>
+                <div class="col" id="row-4-col-4">
+                    <img class="child" src="../public/goods/goods_row_4_col_4.avif" alt="clothes_4">
+                    <p>Convex LT Shirt Men's</p>
+                    <p class="mid">Versatile, lightweight Shirt</p>
+                    <p>CNY 400.00</p>
+                </div>
+            </div>
+            <div class="row" id="row-5">
+                <div class="col" id="row-5-col-1">
+                    <img class="child" src="../public/goods/goods_row_5_col_1.avif" alt="clothes_1">
+                    <p>Jacket Men's</p>
+                    <p class="mid">Light, breathable wind-shell</p>
+                    <p>CNY 100.00</p>
+                </div>
+                <div class="col" id="row-5-col-2">
+                    <img class="child" src="../public/goods/goods_row_5_col_2.avif" alt="clothes_2">
+                    <p>Beta Long Jacket Men's</p>
+                    <p class="mid">Exceptionally versatile <br> GORE-TEX shell</p>
+                    <p>CNY 2100.00</p>
+                </div>
+                <div class="col" id="row-5-col-3">
+                    <img class="child" src="../public/goods/goods_row_5_col_3.avif" alt="clothes_3">
+                    <p>Therme Parka Men's</p>
+                    <p class="mid">Down insulated, waterproof GORE-TEX, <br> longer length parka.</p>
+                    <p>CNY 5000.00</p>
+                </div>
+                <div class="col" id="row-5-col-4">
+                    <img class="child" src="../public/goods/goods_row_5_col_4.avif" alt="clothes_4">
+                    <p>Euler IS Jacket Men's</p>
+                    <p class="mid">Light, streamlined insulation layer</p>
+                    <p>CNY 3000.00</p>
+                </div>
+            </div>
+            <div class="row" id="row-6">
+                <div class="col" id="row-6-col-1">
+                    <img class="child" src="../public/goods/goods_row_6_col_1.avif" alt="clothes_1">
+                    <p>Parka Men's</p>
+                    <p class="mid">Waterproof, synthetically insulated <br> thigh length parka for city living.</p>
+                    <p>CNY 4000.00</p>
+
+                </div>
+                <div class="col" id="row-6-col-2">
+                    <img class="child" src="../public/goods/goods_row_6_col_2.avif" alt="clothes_2">
+                    <p>Rush Jacket Men's</p>
+                    <p class="mid">Our lightest GORE-TEX PRO shell <br> for skiing and snowboarding.</p>
+                    <p>CNY 3000.00</p>
+                </div>
+                <div class="col" id="row-6-col-3">
+                    <img class="child" src="../public/goods/goods_row_6_col_3.avif" alt="clothes_3">
+                    <p>Semis Jacket Men's</p>
+                    <p class="mid">A lightweight, wind and <br> water resistant bomber jacket</p>
+                    <p>CNY 900.00</p>
+                </div>
+                <div class="col" id="row-6-col-4">
+                    <img class="child" src="../public/goods/goods_row_6_col_4.avif" alt="clothes_4">
+                    <p>FL 2 Shoe Women's</p>
+                    <p class="mid">Fast and light (FL) <br> technical approach shoe</p>
+                    <p>CNY 1000.00</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>Company<span>of Store</span></h3>
+        <p class="footer-links">
+            <a href="../index.html" class="link-1">Home</a>
+            <a href="./shipping.html">Shipping</a>
+            <a href="./customs_fees.html">Customs Fees</a>
+            <a href="./privacy_policy.html">Privacy Policy</a>
+            <a href="./collected_data.html">Wishing List</a>
+        </p>
+        <div>
+            <p>Add more stuff please fill the form below:</p>
+            <a href="../html/form.html" alt="link to story page">
+                <button type="button" id="btn_footer"><span> Wish Form </span></button>
+            </a>
+        </div>
+        <p class="footer-company-name">Company of Store © 2022</p>
+    </div>
+    <div class="footer-center">
+
+        <div>
+            <p><span>No.87 Jianguo Road, </span> Chaoyang District, Beijing</p>
+        </div>
+
+        <div>
+            <p><a href="tel:+1-123-123-1234">+1-123-123-1234</a></p>
+        </div>
+
+        <div>
+            <p><a href="mailto:store@company.com">store@company.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Named for the most challenging side of the mountain, We has equipped explorers since 1966 to reach
+            their dreams. Driven by the mantra of Never Stop Exploring, our expeditions inspire us to test the outer
+            limits
+            of performance and possibility.
+        </p>
+</footer>
+
+</html>

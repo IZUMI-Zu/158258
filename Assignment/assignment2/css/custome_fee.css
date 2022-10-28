@@ -1,0 +1,29 @@
+#head_img {
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../public/customs_fee/customs_fee.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#content {
+    font-size: medium;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#content h4 {
+    font-size: large;
+    margin-top: 4%;
+}
+
+#head_img p {
+    background-color: rgba(0, 0, 0, 0.1);
+}

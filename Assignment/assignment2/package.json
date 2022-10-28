@@ -1,0 +1,17 @@
+{
+  "name": "assignment2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 8000",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "leaflet.chinatmsproviders": "^3.0.6"
+  }
+}

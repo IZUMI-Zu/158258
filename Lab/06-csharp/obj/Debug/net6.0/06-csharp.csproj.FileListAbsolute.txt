@@ -1,0 +1,15 @@
+D:\CODING\Massey\158258\Lab\06-csharp\bin\Debug\net6.0\06-csharp.exe
+D:\CODING\Massey\158258\Lab\06-csharp\bin\Debug\net6.0\06-csharp.deps.json
+D:\CODING\Massey\158258\Lab\06-csharp\bin\Debug\net6.0\06-csharp.runtimeconfig.json
+D:\CODING\Massey\158258\Lab\06-csharp\bin\Debug\net6.0\06-csharp.dll
+D:\CODING\Massey\158258\Lab\06-csharp\bin\Debug\net6.0\06-csharp.pdb
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\06-csharp.csproj.AssemblyReference.cache
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\06-csharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\06-csharp.AssemblyInfoInputs.cache
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\06-csharp.AssemblyInfo.cs
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\06-csharp.csproj.CoreCompileInputs.cache
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\06-csharp.dll
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\refint\06-csharp.dll
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\06-csharp.pdb
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\06-csharp.genruntimeconfig.cache
+D:\CODING\Massey\158258\Lab\06-csharp\obj\Debug\net6.0\ref\06-csharp.dll

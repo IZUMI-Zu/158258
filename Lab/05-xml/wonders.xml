@@ -4,23 +4,17 @@
     <wonder>
         <name language="English">Colossus of Rhodes</name>
         <name language="Greek">Κολοσσός  της  Ρόδου</name>
-        <main_image filename="colossus.jpg"></main_image>
+        <main_image filename="colossus.jpg"/>
         <location>Rhodes, Greece</location>
         <height units="feet">107</height>
-        <source>
-            <sectionid>56</sectionid>
-            <newspaperid>21</newspaperid>
-        </source>
+        <source sectionid="56" newspaperid="21"/>
     </wonder>
     <wonder>
         <name language="English">Great Pyramid of Giza</name>
         <name language=""></name>
-        <main_image filename="pyramid.jpg"></main_image>
+        <main_image filename="pyramid.jpg"/>
         <location>Giza, Egypt</location>
         <height units="feet">455</height>
-        <source>
-            <sectionid>29</sectionid>
-            <newspaperid>112</newspaperid>
-        </source>
+        <source sectionid="29" newspaperid="112"/>
     </wonder>
 </ancient_wonders>
