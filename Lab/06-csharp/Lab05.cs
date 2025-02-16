@@ -1,4 +1,4 @@
-﻿namespace _06_csharp;
+namespace _06_csharp;
 
 public class Lab05
 {
@@ -10,6 +10,5 @@ public class Lab05
         {
             Result += 1;
         } while (Result>= 0);
-
     }
 }

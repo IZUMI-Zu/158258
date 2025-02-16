@@ -1,4 +1,4 @@
-﻿namespace _06_csharp;
+namespace _06_csharp;
 
 public class Lab07
 {
@@ -68,7 +68,7 @@ public class Lab07
                 case '*':
                 {
                     Console.WriteLine(a.ToString() + " * " + b.ToString() + " = " +
-                                      a * b);
+                                      (a * b));
                     break;
                 }
                 case '\\':
